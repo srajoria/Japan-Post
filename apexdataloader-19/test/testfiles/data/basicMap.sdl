@@ -1,0 +1,5 @@
+#Mapping values
+sourceOne=destinationOne
+sourceTwo=destinationTwo
+sourceThree=destinationThree
+"constantValue123"=destinationConstant

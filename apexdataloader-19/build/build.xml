@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project ApexDL">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <target name="create_run_jar">
+        <jar destfile="C:/Users/Siddharth/Desktop/JP Project/di.jar" filesetmanifest="mergewithoutmain" duplicate="preserve">
+            <manifest>
+                <attribute name="Built-By" value="${user.name}"/>
+                <attribute name="Main-Class" value="com.salesforce.dataloader.process.DataLoaderRunner"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="C:/apexdataloader-19/bin"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/apexdataloader-19/jar/DataLoader.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/apexdataloader-19/lib/commons-beanutils-core.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/apexdataloader-19/lib/commons-collections-3.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/apexdataloader-19/lib/commons-dbcp-1.2.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/apexdataloader-19/lib/commons-logging.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/apexdataloader-19/lib/commons-pool-1.2.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/apexdataloader-19/lib/jface.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/apexdataloader-19/lib/jfacetext.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/apexdataloader-19/lib/Linux/swt.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/apexdataloader-19/lib/log4j-1.2.8.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/apexdataloader-19/lib/oracle.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/apexdataloader-19/lib/osgi.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/apexdataloader-19/lib/partnerwsdl.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/apexdataloader-19/lib/quartz-1.5.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/apexdataloader-19/lib/runtime.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/apexdataloader-19/lib/spring-beans.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/apexdataloader-19/lib/spring-core.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/apexdataloader-19/lib/spring.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/apexdataloader-19/lib/text.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/apexdataloader-19/lib/win32/swt.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/apexdataloader-19/lib/wsc.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/apexdataloader-19/test/java/lib/junit.jar"/>
+        </jar>
+    </target>
+</project>
